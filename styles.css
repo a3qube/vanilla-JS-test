@@ -1,0 +1,25 @@
+.headerContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #b9b9b9;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 4px;
+}
+.headerContainer h1{
+    color: rgb(13, 13, 14);
+}
+
+.userDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.userDetails img {
+    width: 50px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
