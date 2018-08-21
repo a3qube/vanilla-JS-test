@@ -6,11 +6,24 @@
     margin-left: auto;
     margin-right:auto;
     border-radius: 4px;
+    align-items: center;
+    padding: 50px 10px;
+    background-image: url("ME.jpg");
+    background-size: cover;
+    background-position: center
 }
 .headerContainer h1{
     color: rgb(13, 13, 14);
+    font-size: 4.5em;
+    letter-spacing: 0.5em;
+    background-color: #ffffff14;
+    border-radius: 24px;
+    padding-left: 27px;
 }
 
+.mainContent {
+    margin-bottom: 100px;
+}
 .userDetails {
     display: flex;
     flex-direction: row;
@@ -22,4 +35,120 @@
     width: 50px;
     margin-left: 3px;
     margin-right: 3px;
+}
+
+.footerStyle {
+    background-color: #877fff;
+    height: 70px;
+    bottom: 0px;
+    position: fixed;
+    width: 98.3%;
+}
+
+.transformedDiv {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /* transform: translate(24px, 76px);
+    transform: rotate(20deg);
+    transform: scale(6,3); */
+    transform: skew(-55deg,22deg);
+    box-shadow: 20px 7px 15px 2px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    transition: transform 4s;
+}
+.transformedDiv:before {
+    content: "Name:";
+    position: absolute;
+    top: 0px;
+    font-weight: bold;
+}
+
+.rotateDiv:before {
+    content: "Name:";
+    position: absolute;
+    top: 0px;
+    font-weight: bold;
+}
+
+.rotateDiv {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: rotate(0deg);
+    /*transform: translate(24px, 76px);
+    transform: scale(6,3); */
+    /* transform: skew(-55deg,22deg); */
+    box-shadow: 20px 7px 15px 2px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    transition: transform 2s;
+    animation-name: rotateDiv;
+    animation-duration: 20s;
+    animation-iteration-count: 4;
+    animation-delay: 2.5s;
+}
+
+@keyframes rotateDiv {
+    from { transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.experienceList {
+    list-style: none;
+}
+
+.experienceHeaderDiv {
+    padding: 20px 10px;
+    background-color: #c55353;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.experienceHeaderDiv svg {
+    margin-left: 2px;
+    transition: margin-left 2s;
+    animation-name: moveIcon;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+}
+
+@keyframes moveIcon {
+    from {margin-left: -90px;}
+    to {margin-left: 2px;}
+}
+.expHeaderStyle {
+    font-size: 2em;
+    letter-spacing: 4px;
+    font-family: 'Metamorphous', cursive;
+    margin-bottom: 10px;
+}
+
+.experienceDate {
+    font-family: monospace;
+    font-size: large
+}
+
+.dutiesList {
+    background-color: #f7e8ee;
+    padding: 14px 60px;
+    border-radius: 14px;
+}
+
+.dutiesList li{
+    font-family: 'Merienda', cursive;
+    list-style-image: url("react-brands.svg");
+    font-size: larger;
+    margin: 5px;
 }
